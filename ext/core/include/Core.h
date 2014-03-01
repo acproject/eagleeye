@@ -1,0 +1,50 @@
+#ifndef _CORE_H
+#define _CORE_H
+#define _USE_MATH_DEFINES
+#include <windows.h>
+
+namespace core
+{
+enum DataType
+{
+	CORE_NOT_DEFINED,
+	CORE_CHAR,
+	CORE_UCHAR,
+	CORE_SHORT,
+	CORE_USHORT,
+	CORE_INT,
+	CORE_UINT,
+	CORE_FLOAT,
+	CORE_WORD,
+	CORE_DWORD,
+	CORE_RGB_UCHAR,
+	CORE_RGBA_UCHAR
+} ;
+
+enum ImageReadingState
+{
+	NO_DEFINED,
+	SEQUENCES_READING,
+	SINGLE_READING
+};
+
+enum FileDescription
+{
+	UNDEFINED_FILE,
+	IMAGE_DATA_FILE,
+	MESH_DATA_FILE,
+	POINTCLOUD_DATA_FILE
+};
+
+enum ColorSpace
+{
+	CORE_UNKNOWN,
+	CORE_GRAYSCALE,
+	CORE_RGB,
+	CORE_YCbCr,
+	CORE_CMYK,
+	CORE_YCCK
+};
+}
+
+#endif
